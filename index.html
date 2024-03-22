@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
+    <link rel="icon" type="image/x-png" href="/Favicon_Compressed.png">
+    <link href="./styles/reset.css" rel="stylesheet" />
+    <link href="./styles/main.css" rel="stylesheet" />
+    <title>Hunter Steven Shaw</title>
+</head>
+<body>
+    <!-- MAIN WEBSITE WARPPER -->
+    <main id="main">
+        <!-- videos/backgrounds -->
+        <video autoplay muted loop preload id="video-desktop">
+            <source src="videos/Desktop/Desktop.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop webkit-playsinline playsinline id="video-mobile">
+            <source src="videos/Mobile/Mobile_v5_Fast.mp4" type="video/mp4">
+        </video>
+        <!-- bootups for mobile/desktop -->
+        <video autoplay muted preload id="windows7Bootup" class="hide">
+            <source src="videos/Desktop/Windows7_Bootup.mp4" type="video/mp4">
+        </video>
+        <video muted id="windows7Shutdown" class="hide">
+            <source src="videos/Desktop/Windows7_Shutdown.mp4" type="video/mp4">
+        </video>
+        <video muted id="windows7Welcome" class="hide">
+            <source src="videos/Desktop/Windows7_Welcome_Screen.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted webkit-playsinline playsinline id="iphoneBootup" class="hide">
+            <source src="videos/Mobile/iPhone_Bootup_Compressed.mp4" type="video/mp4">
+        </video>
+        <!-- desktop version here -->
+        <section id="desktop" class="hide">
+            <div id="desktop-login-wrapper">
+                <div id="desktop-image-wrapper">
+                    <img src="/images/Desktop/Me.png" id="desktop-login-picture" />
+                </div>
+                <span id="desktop-login-name">Hunter Shaw</span>
+                <!-- hide until user clicks my icon || enter user "password" to login desktop -->
+                <div id="desktop-input-wrapper">
+                    <input type="password" id="desktop-input">
+                    <img src="/images/Desktop/Input_Btn.png" id="desktop-input-btn" />
+                    <br />
+                    <img src="/images/Desktop/Switch_User_Btn.png" id="desktop-switch-user-btn" />
+                </div>
+                <!-- footer for login screen desktop -->
+                <img src="/images/Desktop/Shutdown_Btn.png" id="desktop-shutdown-btn"/>
+                <div id="desktop-windows-icon-wrapper">
+                    <img src="/images/Desktop/Windows7_Icon.png" id="desktop-windows-icon" />
+                    <span id="desktop-windows-icon-text">Windows7</span> Ultimate
+                </div>
+            </div>
+            <div id="desktop-main" class="hide">
+                <div id="desktop-time-wrapper">
+                    <span id="desktop-time"></span>
+                    <br />
+                    <span id="desktop-date">3/15/2024</span>
+                </div>
+                <footer id="desktop-main-footer"></footer>
+            </div>
+        </section>
+        <!-- mobile version here -->
+        <div id="mobile-wrapper"></div>
+        <section id="mobile" class="hide">
+            <header id="mobile-header">
+                <span id="mobile-carrier">AT&T</span>
+                <div id="mobile-service-battery">
+                    <img src="/images/Mobile/statusBars/Status_Bars.png" id="status-bar"/>
+                    <span id="fiveG">5G</span>
+                    <img src="/images/Mobile/statusBars/Battery_Icon.png" id="mobile-battery"/>
+                </div>
+            </header>
+            <!-- passcode / fake locked phone -->
+            <div id="lock-screen-wrapper">
+                <img src="/images/Mobile/iPhone_Lock_Icon.png" id="unlock-icon" /><br />
+                <span id="unlock-date"></span><br />
+                <span id="unlock-time"></span>
+            </div>
+            <div id="footer-mobile-unlock">
+                <div id="footer-mobile-untilities">
+                    <img src="/images/Mobile/Flashlight_Icon_Edited.png" id="footer-mobile-flashlight" />
+                    <img src="/images/Mobile/Camera_Icon_Edited.png" id="footer-mobile-camera" />
+                </div>
+                <hr id="footer-mobile-line" />
+            </div>
+            <div id="mobile-unlock-screen"  class="hide">
+                <img src="/images/Mobile/iPhone_Lock_Icon.png" id="passcode-unlock-img"/>
+                <br />
+                <span id="passcode-unlock-main-text">Enter Passcode</span>
+                <br />
+                <span id="passcode-unlock-sub-text">Your passcode is required <br />to enable Face ID</span>
+                <div id="passcode-unlock-dots-wrapper">
+                    <!-- <input type="radio" class="dots" name="dots" value="1" />
+                    <input type="radio" class="dots" name="dots" value="2" />
+                    <input type="radio" class="dots" name="dots" value="3" />
+                    <input type="radio" class="dots" name="dots" value="4" />
+                    <input type="radio" class="dots" name="dots" value="5" />
+                    <input type="radio" class="dots" name="dots" value="6" /> -->
+                    <div id="active-dots-wrapper">
+                        <div class="active-dots" id="one"></div><!-- active-dots-change -->
+                        <div class="active-dots" id="two"></div>
+                        <div class="active-dots" id="three"></div>
+                        <div class="active-dots" id="four"></div>
+                        <div class="active-dots" id="five"></div>
+                        <div class="active-dots" id="six"></div>
+                    </div>
+                </div>
+                <div id="passcode-unlock-keypad-wrapper">
+                    <div>
+                        <button class="keypad-btns" value="1">1</button>
+                        <button class="keypad-btns" value="2">2</button>
+                        <button class="keypad-btns" value="3">3</button>
+                    </div>
+                    <div>
+                        <button class="keypad-btns" value="4">4</button>
+                        <button class="keypad-btns" value="5">5</button>
+                        <button class="keypad-btns" value="6">6</button>
+                    </div>
+                    <div>
+                        <button class="keypad-btns" value="7">7</button>
+                        <button class="keypad-btns" value="8">8</button>
+                        <button class="keypad-btns" value="9">9</button>
+                    </div>
+                    <div>
+                        <button class="keypad-btns" value="0">0</button>
+                    </div>
+                </div>
+                <footer id="passcode-unlock-footer-wrapper">
+                    <span id="passcode-emergency">Emergency</span>
+                    <span id="passcode-cancel">Cancel</span>
+                </footer>
+                <hr id="footer-passcode-line" />
+            </div>
+            <div id="mobile-signedin-main" class="hide">
+
+                <footer id="mobile-signedin-footer"></footer>
+            </div>
+        </section>
+    </main>
+    <!-- copyright info -->
+    <footer id="footer">
+        &copy; <span id="footer-year"></span>, hunterstevenshaw.info
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

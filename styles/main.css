@@ -1,0 +1,552 @@
+body {
+    overflow: hidden; 
+    font-family: 'Segoe UI', sans-serif;
+    touch-action: manipulation;
+}
+/* desktop animated bg */
+#video-desktop {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+/* mobile animated bg */
+#video-mobile {
+    position: fixed;
+    display: none;
+    right: 0;
+    bottom: 0;
+    width: 470px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    touch-action: manipulation;
+}
+#main {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 57%;
+    min-height: 73%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+/* start/bootup screens */
+#windows7Bootup {
+    position: absolute;
+    right: 29%;
+    bottom: 20%;
+    width: 800px;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+}
+#windows7Shutdown {
+    position: absolute;
+    width: 1100px;
+    height: 655px;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+#windows7Welcome {
+    position: absolute;
+    width: 1100px;
+    height: 655px;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+#iphoneBootup {
+    position: absolute;
+    right: 29%;
+    bottom: 20%;
+    width: 250px;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+/* after video done, load menu */
+/* DESKTOP STARTS NOW!!!!!!! */
+#desktop {
+    /* display: block; */
+    background-image: url(/images/Desktop/Windows7_Login_Screen_BG.png);
+    text-align: center;
+    position: absolute;
+    width: 1100px;
+    height: 655px;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    /* border: 1px red double; */
+    box-shadow: 2px 2px 2px 2px 
+    #39301e;
+}
+.desktop-change-bg {
+    background-image: url(/images/Desktop/Windows7_Main_BG_Compressed.png) !important;
+    position: absolute;
+    width: 1100px;
+    height: 655px;
+}
+#desktop-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1100px;
+    height: 655px;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+}
+#desktop-time-wrapper {
+    text-align: right;
+    position: absolute;
+    top: 92%;
+    left: 90%;
+    z-index: 1;
+}
+/* #desktop-time {
+
+}
+#desktop-date {
+
+} */
+#desktop-main-footer {
+    width: 1070px;
+    height: 55px;
+    background-color: black;
+    bottom: 0;
+    z-index: 0;
+}
+#desktop-image-wrapper {
+    height: 115px;
+    position: relative;
+    width: 115px;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    cursor: pointer;
+}
+#desktop-image-wrapper:before {
+    content: "";
+    background-image: url("/images/Desktop/Border_Gradient.png");
+    background-size: 115px;
+    border: 1px #444 solid;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    /* linear-gradient(to bottom, #DBFAF5, #67C0E1) 30; */
+}
+#desktop-login-picture {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 5px;
+    border: 1px black solid;
+}
+#desktop-login-name {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    left: 50%;
+    top: 61%;
+    transform: translate(-50%, -50%);
+    font-size: 1.1rem;
+    color: whitesmoke;
+    font-weight: 400;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+#desktop-input-wrapper {
+    display: none;
+    position: absolute;
+    left: 51%;
+    top: 61%;
+    transform: translate(-50%, -50%);
+}
+#desktop-input {
+    height: 25px;
+}
+#desktop-input-btn {
+    cursor: pointer;
+    position: relative;
+    top: 12px;
+}
+#desktop-switch-user-btn {
+    position: relative;
+    cursor: pointer;
+    width: 100px;
+    top: 30px;
+    right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#desktop-windows-icon-wrapper {
+    margin-top: -15px;
+}
+#desktop-windows-icon {
+    position: relative;
+    bottom: -10px;
+}
+/* #desktop-login-wrapper {
+
+} */
+
+
+
+/* footer */
+#desktop-shutdown-btn {
+    position: absolute;
+    left: 95%;
+    top: 95%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+#desktop-windows-icon-wrapper {
+    color: whitesmoke;
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%, -50%);
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    z-index: 10;
+}
+#desktop-windows-icon-text {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+
+/* MOBILE STARTS NOW!!!!!! */
+#mobile {
+    /* display: block; */
+    background-image: url(/images/Mobile/iPhone_Wallper_BG.png);
+    background-color:rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    text-align: center;
+    position: absolute;
+    width: 260px;
+    height: 545px;
+    left: 50%;
+    top: 48.5%;
+    transform: translate(-50%, -50%);
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    z-index: 1;
+}
+#mobile-wrapper {
+    display: none;
+    text-align: center;
+    position: absolute;
+    width: 260px;
+    height: 545px;
+    left: 50%;
+    top: 48.5%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    z-index: 20;
+}
+.mobile-change-bg {
+    background-image: url(/images/Mobile/iPhone_Wallper_Blurred_BG.png) !important;
+    position: absolute;
+    width: 260px;
+    height: 545px;
+}
+#mobile-header {
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    padding: 3px 15px 0 5px;
+}
+#mobile-carrier {
+    font-size: 0.8rem;
+    font-weight: bold;
+    position: relative;
+    padding: 8px;
+}
+#mobile-service-battery {
+    color: white;
+    position: relative;
+    left: 5px;
+}
+#status-bar {
+    width: 20px;
+    position: relative;
+    top: 5px;
+    right: 3px;
+}
+/* lockscreen */
+#lock-screen-wrapper {
+    color: #fff;
+    position: relative;
+    top: 15px;
+    z-index: 1;
+}
+#unlock-icon {
+    width: 25px;
+    position: absolute;
+    bottom: 85px;
+    right: 117px;
+}
+#unlock-date {
+    font-size: 1.3rem;
+}
+#unlock-time {
+    font-size: 3.5rem;
+}
+#mobile-unlock-screen {
+    z-index: 20;
+}
+#passcode-unlock-img {
+    width: 25px;
+}
+#passcode-unlock-main-text {
+    font-size: 1.3rem;
+    color: whitesmoke;
+    text-align: center;
+    position: relative;
+    text-shadow: 0 0 1px whitesmoke, 0 0 1px whitesmoke;
+    top: 15px;
+}
+#passcode-unlock-sub-text {
+    font-size: 1.1rem;
+    color: whitesmoke;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+#passcode-unlock-dots-wrapper {
+    position: relative;
+    top: 35px;
+}
+.dots:disabled {
+    opacity: .3;
+    outline: none;
+    accent-color:green;
+    z-index: 2;
+}
+#active-dots-wrapper {
+    position: relative;
+    left: 51px;
+    bottom: 0px;
+    z-index: -1;
+    display: flex;
+}
+.active-dots {
+    width: 14px;
+    height: 15px;
+    border: 1px whitesmoke solid;
+    border-radius: 100%;
+    background-color: #00000023;
+    margin-left: 9.23px;
+    overflow: hidden;
+}
+.active-dots-change {
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+#passcode-unlock-keypad-wrapper {
+    position: relative;
+    top: 55px;
+    touch-action: manipulation;
+}
+.keypad-btns {
+    border-radius: 100%;
+    padding: 15px 20px 15px 20px;
+    margin: 5px;
+    font-size: 1.3rem;
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.349);
+    border: none;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+#passcode-unlock-footer-wrapper {
+    position: absolute;
+    bottom: 10px;
+    opacity: 1;
+}
+#footer-passcode-line {
+    border-width: 1px 1px 0;
+    background-color: white;
+    border: 2px white solid;
+    width: 40%;
+    opacity: 1;
+    right: 75px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 5px;
+}
+#passcode-emergency {
+    position: absolute;
+    right: 175px;
+    bottom: 30px;
+    font-size: 0.9rem;
+}
+#passcode-cancel {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    font-size: 0.95rem;
+    /* z-index: 1; */
+    touch-action: manipulation;
+}
+/* MOBILE MAINNN SCREEN */
+#mobile-signedin-main {
+    text-align: center;
+    position: absolute;
+    width: 260px;
+    height: 545px;
+    left: 50%;
+    top: 48.5%;
+    transform: translate(-50%, -50%);
+}
+/* animations */
+@keyframes slideaway {
+    from { display: block; }
+    to { opacity: 0;}
+}
+.hide {
+    animation: slideaway 500ms;
+    display: none;
+}
+/* mobile footer */
+#mobile-signedin-footer {
+    position: absolute;
+    width: 215px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 25px;
+    right: 8px;
+}
+/* footer */
+footer {
+    position: fixed;
+    right: 0;
+    top: 1;
+    bottom: 0;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    color: whitesmoke;
+    opacity: 0.4;
+    z-index: 2;
+}
+#footer-mobile-unlock {
+    position: relative;
+    bottom: 0px;
+    top: 325px;
+}
+#footer-mobile-line {
+    border-width: 1px 1px 0;
+    background-color: white;
+    border: 2px white solid;
+    width: 40%;
+    opacity: 1;
+    right: 75px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -15px;
+}
+#footer-mobile-untilities {
+    display: flex;
+    justify-content: space-between;
+}
+#footer-mobile-flashlight {
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+    padding: 10px;
+    background-color: #63748b;
+    border-radius: 100%;
+}
+#footer-mobile-camera {
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+    padding: 10px;
+    background-color: #63748b;
+    border-radius: 100%;
+}
+#mobile-battery {
+    width: 25px;
+    position: relative;
+    top: 3px;
+}
+#fiveG {
+    text-align: center;
+}
+
+
+/* switch to mobile view */
+@media only screen and (max-width: 1200px) {
+    #video-desktop {
+        display: none;
+    }
+    #video-mobile {
+        display: block;
+    }
+    #desktop {
+        display: none !important;
+    }
+    body {
+        overflow: hidden;
+    }
+}
+@media only screen and (max-height: 850px) {
+    body {
+        overflow-y: auto;
+    }
+    #desktop {
+        top: 52.5%;
+    }
+}
+@media only screen and (max-height: 800px) {
+    #desktop {
+        top: 53%;
+    }
+}
+@media only screen and (max-height: 750px) {
+    #desktop {
+        top: 53.5%;
+    }
+}
+@media only screen and (max-height: 700px) {
+    #desktop {
+        top: 54%;
+    }
+}
+
+
+
+
+
+/* @media only screen and (min-height: 850px) {
+    #desktop {
+        width: 1100px;
+        height: 655px;
+        left: 50%;
+        top: 52%;
+    }
+} */
