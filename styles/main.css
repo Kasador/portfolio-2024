@@ -239,7 +239,7 @@ body {
 /* MOBILE STARTS NOW!!!!!! */
 #mobile {
     /* display: block; */
-    background-image: url(/images/Mobile/iPhone_Wallper_BG.png);
+    background-image: url(/images/Mobile/wallpapers/iPhone_Wallper_BG_v2.png);
     background-color:rgba(0, 0, 0, 0.5);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -269,7 +269,7 @@ body {
     z-index: 20;
 }
 .mobile-change-bg {
-    background-image: url(/images/Mobile/iPhone_Wallper_Blurred_BG.png) !important;
+    background-image: url(/images/Mobile/wallpapers/iPhone_Wallper_Blurred_BG_v2.png) !important;
     position: absolute;
     width: 260px;
     height: 545px;
@@ -428,14 +428,18 @@ body {
     padding: 8px;
 }
 #mobile-weather-box {
-    background-image: linear-gradient(#6a7482, #525b67);
-    width: 120px;
-    height: 120px;
+    background-image: linear-gradient(#6b7482, #525b67);
+    width: 100px;
+    height: 100px;
     position: absolute;
-    bottom: 365px;
-    left: 20px;
+    bottom: 350px;
+    left: 15px;
     border-radius: 20px;
     color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 15px;
 }
 #mobile-apps-footer {
     display: flex;
@@ -443,6 +447,33 @@ body {
     top: 487px;
     z-index: 5;
     left: 18px;
+}
+#mobile-weather-city {
+    font-size: 0.9rem;
+}
+#mobile-weather-temp {
+    font-size: 2rem;
+}
+#mobile-weather-data {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+#mobile-weather-icon {
+    width: 25px;
+}
+#mobile-weather-outside {
+    font-size: 0.8rem;
+}
+#mobile-weather-highnlow {
+    font-size: 0.8rem;
+    padding-top: 2px;
+}
+#mobile-weather-high {
+
+}
+#mobile-weather-low {
+
 }
 /* animations */
 @keyframes slideaway {
