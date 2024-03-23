@@ -410,11 +410,11 @@ body {
     right: 20px;
     bottom: 30px;
     font-size: 0.95rem;
-    /* z-index: 1; */
+    z-index: 1;
     touch-action: manipulation;
 }
 /* MOBILE MAINNN SCREEN */
-#mobile-signedin-main {
+#mobile-main {
     text-align: center;
     position: absolute;
     width: 260px;
@@ -422,6 +422,27 @@ body {
     left: 50%;
     top: 48.5%;
     transform: translate(-50%, -50%);
+}
+.mobile-apps {
+    width: 40px;
+    padding: 8px;
+}
+#mobile-weather-box {
+    background-image: linear-gradient(#6a7482, #525b67);
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    bottom: 365px;
+    left: 20px;
+    border-radius: 20px;
+    color: whitesmoke;
+}
+#mobile-apps-footer {
+    display: flex;
+    position: relative;
+    top: 487px;
+    z-index: 5;
+    left: 18px;
 }
 /* animations */
 @keyframes slideaway {
@@ -433,7 +454,7 @@ body {
     display: none;
 }
 /* mobile footer */
-#mobile-signedin-footer {
+#mobile-main-footer {
     position: absolute;
     width: 215px;
     height: 50px;

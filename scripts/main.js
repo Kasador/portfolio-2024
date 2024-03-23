@@ -214,7 +214,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
     let dotFive = document.getElementById("five");
     let dotSix = document.getElementById("six");
     let changeCarrierToTime = document.getElementById('mobile-carrier');
-    let showMobileScreen = document.getElementById('mobile-signedin-main');
+    let showMobileScreen = document.getElementById('mobile-main');
 
     const getNumber = (e) => {
         // change cancel to delete || add dot
