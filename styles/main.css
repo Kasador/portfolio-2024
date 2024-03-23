@@ -469,12 +469,12 @@ body {
     font-size: 0.8rem;
     padding-top: 2px;
 }
-#mobile-weather-high {
+/* #mobile-weather-high {
 
 }
 #mobile-weather-low {
 
-}
+} */
 /* animations */
 @keyframes slideaway {
     from { display: block; }
