@@ -239,7 +239,7 @@ body {
 /* MOBILE STARTS NOW!!!!!! */
 #mobile {
     /* display: block; */
-    background-image: url(/images/Mobile/wallpapers/iPhone_Wallper_BG_v2.png);
+    background-image: url(/images/Mobile/wallpapers/iPhone_Wallper_BG_v3.png);
     background-color:rgba(0, 0, 0, 0.5);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -269,7 +269,7 @@ body {
     z-index: 20;
 }
 .mobile-change-bg {
-    background-image: url(/images/Mobile/wallpapers/iPhone_Wallper_Blurred_BG_v2.png) !important;
+    background-image: url(/images/Mobile/wallpapers/iPhone_Wallper_Blurred_BG_v3.png) !important;
     position: absolute;
     width: 260px;
     height: 545px;
