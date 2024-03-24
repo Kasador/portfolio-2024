@@ -499,7 +499,7 @@ body {
 }
 #mobile-photos-location {
     font-size: 0.9rem;
-    text-shadow: 0 0 2px whitesmoke, 0 0 2px whitesmoke;
+    text-shadow: 0 0 1px whitesmoke, 0 0 1px whitesmoke;
 }
 #mobile-photos-data {
     text-align: left;
@@ -547,10 +547,10 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    bottom: 15px;
+    bottom: 7px;
 }
 #mobile-calendar-date {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 #mobile-calendar-day {
     padding-top: 10px;
