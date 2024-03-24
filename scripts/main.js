@@ -1,8 +1,3 @@
-// redirect if not secure
-const url = 'https://hunterstevenshaw.info'
-if (window.location.href !== url) {
-    window.location = url;
-}
 // check if on mobile/desktop
 let getMobileWrapper = document.getElementById("mobile-wrapper");
 // load loading screens for windows desktop mode / iphone mobile mode
@@ -12,7 +7,7 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
         // true for mobile device
         console.log('Using Mobile Device.');
         console.log('Booting Apple IOS...');
-
+        
         var mobileVideo = document.getElementById("iphoneBootup");
         var mobileContent = document.getElementById("mobile");
 
