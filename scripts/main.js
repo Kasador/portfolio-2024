@@ -34,9 +34,9 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
     }
 )};
 // Return today's date and time
-let currentTime = new Date()
-let getDate = currentTime.getDate()
-let getDay = currentTime.getDay()          
+let currentTime = new Date();
+let getDate = currentTime.getDate();
+let getDay = currentTime.getDay();          
 let unlockDate = getDay;                   // Get the weekday as a number (0-6)
 switch (unlockDate) {
     case 0:
@@ -60,13 +60,13 @@ switch (unlockDate) {
     case 6:
         unlockDate= "Saturday";
 }
-let getFullYear = currentTime.getFullYear()         // Get the four digit year (yyyy)
-let getHours = currentTime.getHours()               // Get the hour (0-23)
-let getMilliseconds = currentTime.getMilliseconds() // Get the milliseconds (0-999)
-let getMinutes = currentTime.getMinutes()           // Get the minutes (0-59)
-let getMonth = currentTime.getMonth()               // Get the month (0-11)
-let getSeconds = currentTime.getSeconds()           // Get the seconds (0-59)
-let getTime = currentTime.getTime()                 // Get the time (milliseconds since January 1, 1970)
+let getFullYear = currentTime.getFullYear();         // Get the four digit year (yyyy)
+let getHours = currentTime.getHours();               // Get the hour (0-23)
+let getMilliseconds = currentTime.getMilliseconds(); // Get the milliseconds (0-999)
+let getMinutes = currentTime.getMinutes();           // Get the minutes (0-59)
+let getMonth = currentTime.getMonth();               // Get the month (0-11)
+let getSeconds = currentTime.getSeconds();           // Get the seconds (0-59)
+let getTime = currentTime.getTime();                 // Get the time (milliseconds since January 1, 1970)
 let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 let displayMonth = months[getMonth];
@@ -101,6 +101,20 @@ const startClock = (e) => {
         console.log("Time was changed! Updating clock...");
     }
 };
+// calendar box info
+let calendarBox = document.getElementById('mobile-calendar-box');
+let calendarMonth = document.getElementById('mobile-calendar-month');
+let calendarDate = document.getElementById('mobile-calendar-date');
+let calendarDay = document.getElementById('mobile-calendar-day');
+calendarBox.addEventListener('loadeddata', e => {
+    console.log('Calendar Loaded!');
+    calendarMonth.innerHTML = displayMonth;
+    calendarDate.innerHTML = unlockDate;
+    calendarDay.innerHTML = getDate;
+});
+
+
+
 // Desktop show/hide login 
 let passwordInput = document.getElementById("desktop-input");
 let passwordBtn = document.getElementById("desktop-input-btn");
