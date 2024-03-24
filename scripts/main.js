@@ -106,15 +106,6 @@ let calendarBox = document.getElementById('mobile-calendar-box');
 let calendarMonth = document.getElementById('mobile-calendar-month');
 let calendarDate = document.getElementById('mobile-calendar-date');
 let calendarDay = document.getElementById('mobile-calendar-day');
-calendarBox.addEventListener('loadeddata', e => {
-    console.log('Calendar Loaded!');
-    calendarMonth.innerHTML = displayMonth;
-    calendarDate.innerHTML = unlockDate;
-    calendarDay.innerHTML = getDate;
-});
-
-
-
 // Desktop show/hide login 
 let passwordInput = document.getElementById("desktop-input");
 let passwordBtn = document.getElementById("desktop-input-btn");
@@ -229,6 +220,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
     let dotSix = document.getElementById("six");
     let changeCarrierToTime = document.getElementById('mobile-carrier');
     let showMobileScreen = document.getElementById('mobile-main');
+    let showMobileFooter = document.getElementById('mobile-main-footer');
 
     const getNumber = (e) => {
         // change cancel to delete || add dot
@@ -251,7 +243,12 @@ window.addEventListener('DOMContentLoaded', (e) => {
             getMobileBG.classList.remove('mobile-change-bg');
             showPasscodeMenu.style.display = "none";
             showMobileScreen.style.display = 'block';
+            showMobileFooter.style.display = 'block';
             changeCarrierToTime.innerHTML = formattedTime;
+            console.log('Calendar Loaded!');
+            calendarMonth.innerHTML = displayMonth;
+            calendarDate.innerHTML = getDate;
+            calendarDay.innerHTML = unlockDate;
         } 
     };
     // on number tap, get that number's value (getEach)

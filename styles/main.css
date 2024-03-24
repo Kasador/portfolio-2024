@@ -447,13 +447,6 @@ body {
     left: 30px;
     font-size: 0.8rem;
 }
-#mobile-apps-footer {
-    display: flex;
-    position: relative;
-    top: 487px;
-    z-index: 5;
-    left: 18px;
-}
 #mobile-weather-city {
     font-size: 0.9rem;
 }
@@ -555,6 +548,33 @@ body {
 #mobile-calendar-day {
     padding-top: 10px;
 }
+#mobile-apps-box {
+    position: absolute;
+    bottom: 190px;
+    left: 135px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.mobile-apps-data {
+    padding-right: 1px;
+}
+#mobile-apps-wrapper-square {
+    display: flex;
+    flex-direction: row;
+}
+#mobile-apps-wrapper-straight {
+    position: relative;
+    right: 230px;
+    top: 150px;
+    display: flex;
+}
+.mobile-apps-text {
+    color: whitesmoke;
+    font-size: 0.7rem;
+    position: relative;
+    top: -7px;
+}
 /* #mobile-weather-high {
 
 }
@@ -578,6 +598,14 @@ body {
     background-color: #000000;
     border-radius: 25px;
     right: 8px;
+    bottom: 5px;
+}
+#mobile-apps-footer {
+    display: flex;
+    position: relative;
+    top: 450px;
+    z-index: 5;
+    left: 18px;
 }
 /* footer */
 footer {
