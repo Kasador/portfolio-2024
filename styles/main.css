@@ -567,6 +567,18 @@ body {
     top: 150px;
     display: flex;
 }
+#mobile-apps-mail-notification {
+    position: absolute;
+    border-radius: 100%;
+    background-color: #f93c2d;
+    font-size: 0.8rem;
+    height: 12px;
+    width: 10px;
+    color:whitesmoke;
+    padding: 4px;
+    top: 0px;
+    left: 35px;
+}
 .mobile-apps-text {
     color: whitesmoke;
     font-size: 0.7rem;
