@@ -1,3 +1,8 @@
+// redirect if not secure
+const url = 'https://hunterstevenshaw.info'
+if (window.location.href !== url) {
+    window.location.href = url;
+}
 // check if on mobile/desktop
 let getMobileWrapper = document.getElementById("mobile-wrapper");
 // load loading screens for windows desktop mode / iphone mobile mode
