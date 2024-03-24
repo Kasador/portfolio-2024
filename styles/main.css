@@ -430,7 +430,7 @@ body {
 #mobile-weather-box {
     background-image: linear-gradient(#6b7482, #525b67);
     width: 80px;
-    height: 90px;
+    height: 80px;
     position: absolute;
     bottom: 370px;
     left: 15px;
@@ -443,15 +443,19 @@ body {
 }
 #mobile-weather-text {
     position: absolute;
-    top: 125px;
+    top: 115px;
     left: 30px;
     font-size: 0.8rem;
 }
 #mobile-weather-city {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    position: relative;
+    top: -5px;
 }
 #mobile-weather-temp {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    position: relative;
+    top: -5px;
 }
 #mobile-weather-data {
     display: flex;
@@ -472,7 +476,7 @@ body {
     background-position: center;
     background-size: cover;
     width: 80px;
-    height: 90px;
+    height: 80px;
     position: absolute;
     bottom: 370px;
     left: 135px;
@@ -485,7 +489,7 @@ body {
 }
 #mobile-photos-text {
     position: absolute;
-    top: 125px;
+    top: 115px;
     left: 30px;
     font-size: 0.8rem;
 }
@@ -495,17 +499,17 @@ body {
 }
 #mobile-photos-data {
     text-align: left;
-    padding-top: 45px;
+    padding-top: 35px;
 }
 #mobile-photos-date {
     font-size: 0.7rem;
 }
-#mobile-calendar-box{
+#mobile-calendar-box {
     width: 80px;
-    height: 90px;
+    height: 80px;
     background-color: whitesmoke;
     position: absolute;
-    bottom: 220px;
+    bottom: 230px;
     left: 15px;
     border-radius: 20px;
     display: flex;
@@ -515,7 +519,7 @@ body {
 }
 #mobile-calendar-text {
     position: absolute;
-    top: 125px;
+    top: 115px;
     left: 30px;
     font-size: 0.8rem;
     color: whitesmoke;
@@ -530,7 +534,7 @@ body {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: whitesmoke;
     text-transform: uppercase;
 }
@@ -541,7 +545,7 @@ body {
     bottom: 10px;
 }
 #mobile-calendar-date {
-    font-size: 3.5rem;
+    font-size: 3.0rem;
 }
 #mobile-calendar-day {
     padding-top: 10px;
