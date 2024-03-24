@@ -430,9 +430,9 @@ body {
 #mobile-weather-box {
     background-image: linear-gradient(#6b7482, #525b67);
     width: 80px;
-    height: 100px;
+    height: 90px;
     position: absolute;
-    bottom: 360px;
+    bottom: 370px;
     left: 15px;
     border-radius: 20px;
     color: whitesmoke;
@@ -443,7 +443,7 @@ body {
 }
 #mobile-weather-text {
     position: absolute;
-    top: 135px;
+    top: 125px;
     left: 30px;
     font-size: 0.8rem;
 }
@@ -456,7 +456,6 @@ body {
 #mobile-weather-data {
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
 }
 #mobile-weather-icon {
     width: 25px;
@@ -468,14 +467,14 @@ body {
     font-size: 0.8rem;
     padding-top: 2px;
 }
-#mobile-photos-box{
+#mobile-photos-box {
     background-image: url(/images/Mobile/photos/Me.png);
     background-position: center;
     background-size: cover;
     width: 80px;
-    height: 100px;
+    height: 90px;
     position: absolute;
-    bottom: 360px;
+    bottom: 370px;
     left: 135px;
     border-radius: 20px;
     color: whitesmoke;
@@ -486,27 +485,27 @@ body {
 }
 #mobile-photos-text {
     position: absolute;
-    top: 135px;
+    top: 125px;
     left: 30px;
     font-size: 0.8rem;
 }
 #mobile-photos-location {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-shadow: 0 0 1px whitesmoke, 0 0 1px whitesmoke;
 }
 #mobile-photos-data {
     text-align: left;
-    padding-top: 55px;
+    padding-top: 45px;
 }
 #mobile-photos-date {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 #mobile-calendar-box{
     width: 80px;
-    height: 100px;
+    height: 90px;
     background-color: whitesmoke;
     position: absolute;
-    bottom: 205px;
+    bottom: 220px;
     left: 15px;
     border-radius: 20px;
     display: flex;
@@ -516,11 +515,10 @@ body {
 }
 #mobile-calendar-text {
     position: absolute;
-    top: 135px;
+    top: 125px;
     left: 30px;
     font-size: 0.8rem;
     color: whitesmoke;
-    
 }
 #mobile-calendar-month {
     position: relative;
@@ -540,7 +538,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    bottom: 7px;
+    bottom: 10px;
 }
 #mobile-calendar-date {
     font-size: 3.5rem;
@@ -550,7 +548,7 @@ body {
 }
 #mobile-apps-box {
     position: absolute;
-    bottom: 190px;
+    bottom: 205px;
     left: 135px;
     display: flex;
     flex-direction: row;
