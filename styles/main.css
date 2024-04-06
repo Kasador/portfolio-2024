@@ -3,6 +3,26 @@ body {
     font-family: 'Segoe UI', sans-serif;
     touch-action: manipulation;
 }
+/* promo banner */
+#promo-banner {
+    position: fixed;
+    z-index: 999;
+    text-align: center;
+    background-color: #777;
+    opacity: 0.7;
+    color: whitesmoke;
+    padding: 15px;
+    width: 100%;
+}
+#promo-banner span {
+    color: red;
+    font-size: 1.2rem;
+    text-shadow: 0 0 1px red, 0 0 3px whitesmoke;
+}
+#promo-banner a {
+    color: yellow;
+    font-size: 1.2rem;
+}
 /* desktop animated bg */
 #video-desktop {
     position: fixed;
@@ -692,6 +712,10 @@ footer {
     }
     body {
         overflow: hidden;
+    }
+    #promo-banner {
+        width: 95%;
+        color: white;
     }
 }
 @media only screen and (max-height: 850px) {
