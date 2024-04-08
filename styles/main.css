@@ -581,6 +581,34 @@ body {
 .mobile-apps-data {
     padding-right: 1px;
 }
+/* folder pop up overlay */
+#mobile-folder-overlay-wrapper {
+    position: fixed;
+    z-index: 100;
+    text-align: center;
+    position: absolute;
+    width: 260px;
+    height: 370px;
+    left: 50%;
+    top: 48.5%;
+    transform: translate(-50%, -50%);
+}
+#mobile-folder-overlay-text {
+    font-size: 1.7rem;
+    color: whitesmoke;
+}
+#mobile-folder-overlay {
+    width: 170px;
+    height: 170px;
+    background-color: #d8d9d9;
+    border-radius: 25px;
+}
+#mobile-apps-blog, #mobile-apps-blog-text {
+    position: relative;
+    right: 50px;
+    top: 10px;
+    color: #444;
+}
 #mobile-apps-wrapper-square {
     display: flex;
     flex-direction: row;
