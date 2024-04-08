@@ -4,7 +4,7 @@ body {
     touch-action: manipulation;
 }
 /* promo banner */
-#promo-banner {
+/* #promo-banner {
     position: fixed;
     z-index: 999;
     text-align: center;
@@ -22,7 +22,7 @@ body {
 #promo-banner a {
     color: yellow;
     font-size: 1.2rem;
-}
+} */
 /* desktop animated bg */
 #video-desktop {
     position: fixed;
