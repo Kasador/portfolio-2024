@@ -284,7 +284,32 @@ window.addEventListener('DOMContentLoaded', (e) => {
     });
 });
 
+// function handling project folder
+let appProjectIcon = document.getElementById('mobile-apps-folder');
+let appProjectOverlay = document.getElementById('mobile-folder-overlay-wrapper');
+let getMobileBG = document.getElementById("mobile");
+let showMobileScreen = document.getElementById('mobile-main');
+let showMobileFooter = document.getElementById('mobile-main-footer');
+let hideFooterApps = document.getElementById('mobile-apps-footer');
+let hideStatusBar = document.getElementById('status-bar');
+let changeCarrierToTime = document.getElementById('mobile-carrier');
+let fiveG = document.getElementById('fiveG');
+let mobileBattery = document.getElementById('mobile-battery');
 
+// change background on icon project tap
+appProjectIcon.addEventListener('click', (e) => {
+    console.log('tapped projects...');
+    getMobileBG.style.backgroundImage = 
+        "url(/images/Mobile/wallpapers/iPhone_Wallper_Blurred_BG_WithApps_v3.png)";
+    showMobileScreen.style.display = 'none';
+    showMobileFooter.style.display = 'none';
+    hideFooterApps.style.display = 'none';
+    hideStatusBar.style.display = 'none';
+    changeCarrierToTime.style.display = 'none';
+    fiveG.style.display = 'none';
+    mobileBattery.style.display = 'none';
+    appProjectOverlay.style.display = 'block';
+});
 
 // prevent double tap zoom on mobile
 // const preventZoom = (e) => {
