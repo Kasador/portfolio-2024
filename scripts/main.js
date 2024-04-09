@@ -309,6 +309,12 @@ appProjectIcon.addEventListener('click', (e) => {
     fiveG.style.display = 'none';
     mobileBattery.style.display = 'none';
     appProjectOverlay.style.display = 'block';
+
+    // check if anything else is tapped to exit folder options/apps
+    if (getMobileBG.clicked = true) {
+        getMobileBG.style.backgroundImage = 
+        "url(/images/Mobile/wallpapers/iPhone_Wallper_BG_v3.png)";
+    }
 });
 
 // prevent double tap zoom on mobile
