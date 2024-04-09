@@ -211,11 +211,11 @@ const exitFolderOverLay = (e) => {
     mobileHeader.style.setProperty('display', 'flex', 'important');
     showMobileScreen.style.display = 'block';
     showMobileFooter.style.display = 'block';
-    hideFooterApps.style.display = 'block';
-    hideStatusBar.style.display = 'flex';
-    changeCarrierToTime.style.display = 'block';
-    fiveG.style.display = 'block';
-    mobileBattery.style.display = 'block';
+    hideFooterApps.style.display = 'flex';
+    hideStatusBar.style.display = 'inline-block';
+    changeCarrierToTime.style.display = 'inline-block';
+    fiveG.style.display = 'inline-block';
+    mobileBattery.style.display = 'inline-block';
 };
 const showFolderOverLay = (e) => {
     console.log('tapped projects...');
