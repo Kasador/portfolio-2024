@@ -189,6 +189,48 @@ document.getElementById('unlock-time').innerHTML = formattedTime;
 // function for random status bar || random time between (1-30s) || pick random img/change
 // case statement for random images
 
+// function handling project folder
+let appProjectIcon = document.getElementById('mobile-apps-folder');
+let appProjectOverlay = document.getElementById('mobile-folder-overlay-wrapper');
+let getMobileBG = document.getElementById("mobile");
+let showMobileScreen = document.getElementById('mobile-main');
+let showMobileFooter = document.getElementById('mobile-main-footer');
+let hideFooterApps = document.getElementById('mobile-apps-footer');
+let hideStatusBar = document.getElementById('status-bar');
+let changeCarrierToTime = document.getElementById('mobile-carrier');
+let fiveG = document.getElementById('fiveG');
+let mobileBattery = document.getElementById('mobile-battery');
+let appTikTok = document.getElementById('mobile-apps-tiktok');
+let appBlog = document.getElementById('mobile-apps-blog');
+let mobileHeader = document.getElementById('mobile-header');
+
+const exitFolderOverLay = (e) => {
+    getMobileBG.style.backgroundImage = 
+            "url(/images/Mobile/wallpapers/iPhone_Wallper_BG_v3.png)";
+    appProjectOverlay.style.display = 'none';
+    mobileHeader.style.setProperty('display', 'flex', 'important');
+    showMobileScreen.style.display = 'block';
+    showMobileFooter.style.display = 'block';
+    hideFooterApps.style.display = 'block';
+    hideStatusBar.style.display = 'flex';
+    changeCarrierToTime.style.display = 'block';
+    fiveG.style.display = 'block';
+    mobileBattery.style.display = 'block';
+};
+const showFolderOverLay = (e) => {
+    console.log('tapped projects...');
+    getMobileBG.style.backgroundImage = 
+        "url(/images/Mobile/wallpapers/iPhone_Wallper_Blurred_BG_WithApps_v3.png)";
+    appProjectOverlay.style.display = 'block';
+    showMobileScreen.style.display = 'none';
+    showMobileFooter.style.display = 'none';
+    hideFooterApps.style.display = 'none';
+    hideStatusBar.style.display = 'none';
+    changeCarrierToTime.style.display = 'none';
+    fiveG.style.display = 'none';
+    mobileBattery.style.display = 'none';
+};
+
 // MOBILE || fix for iphone onclick event to tap
 window.addEventListener('DOMContentLoaded', (e) => {
 // Grab HTML Elements
@@ -206,6 +248,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
             getMobileWrapper.style.display = "none";
             hideWelcomeScreen.style.display = "none";
             hideWelcomeFooter.style.display = "none";
+            hideFooterApps.style.display = "none";
             showPasscodeMenu.style.display = "block";
         } else {
             // do something
@@ -244,6 +287,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
             showPasscodeMenu.style.display = "none";
             showMobileScreen.style.display = 'block';
             showMobileFooter.style.display = 'block';
+            hideFooterApps.style.display = "flex";
             changeCarrierToTime.innerHTML = formattedTime;
             console.log('Calendar Loaded!');
             calendarMonth.innerHTML = displayMonth;
@@ -282,43 +326,25 @@ window.addEventListener('DOMContentLoaded', (e) => {
             };
         };
     });
-});
 
-// function handling project folder
-let appProjectIcon = document.getElementById('mobile-apps-folder');
-let appProjectOverlay = document.getElementById('mobile-folder-overlay-wrapper');
-let getMobileBG = document.getElementById("mobile");
-let showMobileScreen = document.getElementById('mobile-main');
-let showMobileFooter = document.getElementById('mobile-main-footer');
-let hideFooterApps = document.getElementById('mobile-apps-footer');
-let hideStatusBar = document.getElementById('status-bar');
-let changeCarrierToTime = document.getElementById('mobile-carrier');
-let fiveG = document.getElementById('fiveG');
-let mobileBattery = document.getElementById('mobile-battery');
-let appTikTok = document.getElementById('mobile-apps-tiktok');
-let appBlog = document.getElementById('mobile-apps-blog');
+    // change background on icon project tap
+    appProjectIcon.addEventListener('click', (e) => {
+        showFolderOverLay();
 
-// change background on icon project tap
-appProjectIcon.addEventListener('click', (e) => {
-    console.log('tapped projects...');
-    getMobileBG.style.backgroundImage = 
-        "url(/images/Mobile/wallpapers/iPhone_Wallper_Blurred_BG_WithApps_v3.png)";
-    showMobileScreen.style.display = 'none';
-    showMobileFooter.style.display = 'none';
-    hideFooterApps.style.display = 'none';
-    hideStatusBar.style.display = 'none';
-    changeCarrierToTime.style.display = 'none';
-    fiveG.style.display = 'none';
-    mobileBattery.style.display = 'none';
-    appProjectOverlay.style.display = 'block';
+        appTikTok.addEventListener('click', (e) => {
+            window.open('https://www.tiktok.com/@kas_ador', '_blank');
+        });
+        appBlog.addEventListener('click', (e) => {
+            window.open('https://product-reviews.blog/', '_blank');
+        });
 
-    appTikTok.addEventListener('click', (e) => {
-        window.open('https://www.tiktok.com/@kas_ador', '_blank');
-    });
-    appBlog.addEventListener('click', (e) => {
-        window.open('https://product-reviews.blog/', '_blank');
+        // overlay if clicked, return to main menu
+        appProjectOverlay.addEventListener('click', (e) => {
+            exitFolderOverLay();
+        });
     });
 });
+
 
 // prevent double tap zoom on mobile
 // const preventZoom = (e) => {

@@ -674,7 +674,7 @@ body {
     bottom: 5px;
 }
 #mobile-apps-footer {
-    display: flex;
+    display: none;
     position: relative;
     top: 450px;
     z-index: 5;
