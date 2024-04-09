@@ -295,6 +295,8 @@ let hideStatusBar = document.getElementById('status-bar');
 let changeCarrierToTime = document.getElementById('mobile-carrier');
 let fiveG = document.getElementById('fiveG');
 let mobileBattery = document.getElementById('mobile-battery');
+let appTikTok = document.getElementById('mobile-apps-tiktok');
+let appBlog = document.getElementById('mobile-apps-blog');
 
 // change background on icon project tap
 appProjectIcon.addEventListener('click', (e) => {
@@ -310,11 +312,12 @@ appProjectIcon.addEventListener('click', (e) => {
     mobileBattery.style.display = 'none';
     appProjectOverlay.style.display = 'block';
 
-    // check if anything else is tapped to exit folder options/apps
-    if (getMobileBG.clicked = true) {
-        getMobileBG.style.backgroundImage = 
-        "url(/images/Mobile/wallpapers/iPhone_Wallper_BG_v3.png)";
-    }
+    appTikTok.addEventListener('click', (e) => {
+        window.open('https://www.tiktok.com/@kas_ador', '_blank');
+    });
+    appBlog.addEventListener('click', (e) => {
+        window.open('https://product-reviews.blog/', '_blank');
+    });
 });
 
 // prevent double tap zoom on mobile
