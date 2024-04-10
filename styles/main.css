@@ -622,6 +622,19 @@ body {
     top: -59px;
     color: #444;
 }
+#mobile-apps-tiktok-text {
+    top: -58px;
+}
+#mobile-apps-instagram, #mobile-apps-instagram-text {
+    position: relative;
+    left: 50px;
+    bottom: 59px;
+    top: -127.5px;
+    color: #444;
+}
+#mobile-apps-instagram-text {
+    top: -127.5px;
+}
 #mobile-apps-wrapper-square {
     display: flex;
     flex-direction: row;

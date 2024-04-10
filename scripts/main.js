@@ -202,6 +202,7 @@ let fiveG = document.getElementById('fiveG');
 let mobileBattery = document.getElementById('mobile-battery');
 let appTikTok = document.getElementById('mobile-apps-tiktok');
 let appBlog = document.getElementById('mobile-apps-blog');
+let appInstagram = document.getElementById('mobile-apps-instagram');
 let mobileHeader = document.getElementById('mobile-header');
 
 const exitFolderOverLay = (e) => {
@@ -327,7 +328,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
         };
     });
 
-    // change background on icon project tap
+    // project folder overlay function plus links on apps in folder.
     appProjectIcon.addEventListener('click', (e) => {
         showFolderOverLay();
 
@@ -337,7 +338,9 @@ window.addEventListener('DOMContentLoaded', (e) => {
         appBlog.addEventListener('click', (e) => {
             window.open('https://product-reviews.blog/', '_blank');
         });
-
+        appInstagram.addEventListener('click', (e) => {
+            window.open('https://www.instagram.com/kas_ador/', '_blank');
+        });
         // overlay if clicked, return to main menu
         appProjectOverlay.addEventListener('click', (e) => {
             exitFolderOverLay();
