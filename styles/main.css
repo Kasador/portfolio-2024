@@ -47,6 +47,7 @@ body {
     transform: translate(-50%, -50%);
     z-index: -1;
     touch-action: manipulation;
+    /* overflow: hidden; */
 }
 #main {
     position: absolute;
@@ -571,6 +572,7 @@ body {
     padding-top: 10px;
 }
 #mobile-apps-box {
+    width: 114px;
     position: absolute;
     bottom: 205px;
     left: 135px;
