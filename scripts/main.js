@@ -339,8 +339,10 @@ window.addEventListener('DOMContentLoaded', (e) => {
             window.open('https://product-reviews.blog/', '_blank');
         });
         appInstagram.addEventListener('click', (e) => {
-            window.open('https://www.instagram.com/kas_ador/', '_blank');
-        });
+            // e.preventDefault(); instagram blocked
+            // make instagram app and use instagram api to pull your data into the fake app.
+            window.open('https://www.instagram.com/kas_ador','_blank');
+        }, false);
         // overlay if clicked, return to main menu
         appProjectOverlay.addEventListener('click', (e) => {
             exitFolderOverLay();
