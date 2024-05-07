@@ -27,6 +27,7 @@ body {
     padding: 20px;
 }
 #promo-banner-close-btn {
+    cursor: pointer;
     position: absolute;
     left: 90%;
     top: 10px;
