@@ -238,14 +238,14 @@ const hideTopBar = () => {
     fiveG.style.display = 'none';
     mobileBattery.style.display = 'none';
 };
-const exitFolderOverLay = (e) => {
+const exitFolderOverLay = () => {
     getMobileBG.style.backgroundImage = 
             "url(/images/Mobile/wallpapers/iPhone_Wallper_BG_v3.png)";
     appProjectOverlay.style.display = 'none';
     exitApp();
 };
-const showFolderOverLay = (e) => {
-    console.log('tapped projects...');
+const showFolderOverLay = () => {
+    console.log('Tapped projects folder.');
     getMobileBG.style.backgroundImage = 
         "url(/images/Mobile/wallpapers/iPhone_Wallper_Blurred_BG_WithApps_v3.png)";
     appProjectOverlay.style.display = 'block';
@@ -253,7 +253,7 @@ const showFolderOverLay = (e) => {
     hideTopBar();
 };
 const showSMSApp = (e) => {
-    console.log('tapped SMS iMessager...');
+    console.log('Tapped SMS messager.');
     enterApp();
 };
 
