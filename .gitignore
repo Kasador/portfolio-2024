@@ -1,0 +1,10 @@
+$ git status
+    [...]
+    # Untracked files:
+    [...]
+    #       .vscode
+    #       node_modules
+    #       .env
+    #       package-lock.json
+    #       package.json
+    [...]

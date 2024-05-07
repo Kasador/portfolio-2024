@@ -217,10 +217,20 @@ let appSMS = document.getElementById('app-imessage');
 let appSMSOverlay = document.getElementById('enter-app-SMS');
 let exitSMS = document.getElementById('SMS-exit');
 
-const enterNewApp = () => {
+const enterApp = () => {
     showMobileScreen.style.display = 'none';
     showMobileFooter.style.display = 'none';
     hideFooterApps.style.display = 'none';
+};
+const exitApp = () => {
+    mobileHeader.style.setProperty('display', 'flex', 'important');
+    showMobileScreen.style.display = 'block';
+    showMobileFooter.style.display = 'block';
+    hideFooterApps.style.display = 'flex';
+    hideStatusBar.style.display = 'inline-block';
+    changeCarrierToTime.style.display = 'inline-block';
+    fiveG.style.display = 'inline-block';
+    mobileBattery.style.display = 'inline-block';
 };
 const hideTopBar = () => {
     hideStatusBar.style.display = 'none';
@@ -232,26 +242,19 @@ const exitFolderOverLay = (e) => {
     getMobileBG.style.backgroundImage = 
             "url(/images/Mobile/wallpapers/iPhone_Wallper_BG_v3.png)";
     appProjectOverlay.style.display = 'none';
-    mobileHeader.style.setProperty('display', 'flex', 'important');
-    showMobileScreen.style.display = 'block';
-    showMobileFooter.style.display = 'block';
-    hideFooterApps.style.display = 'flex';
-    hideStatusBar.style.display = 'inline-block';
-    changeCarrierToTime.style.display = 'inline-block';
-    fiveG.style.display = 'inline-block';
-    mobileBattery.style.display = 'inline-block';
+    exitApp();
 };
 const showFolderOverLay = (e) => {
     console.log('tapped projects...');
     getMobileBG.style.backgroundImage = 
         "url(/images/Mobile/wallpapers/iPhone_Wallper_Blurred_BG_WithApps_v3.png)";
     appProjectOverlay.style.display = 'block';
-    enterNewApp();
+    enterApp();
     hideTopBar();
 };
 const showSMSApp = (e) => {
     console.log('tapped SMS iMessager...');
-    enterNewApp();
+    enterApp();
 };
 
 // MOBILE || fix for iphone onclick event to tap
@@ -383,6 +386,11 @@ window.addEventListener('DOMContentLoaded', (e) => {
         // exit SMS
         exitSMS.addEventListener('click', (e) => {
             appSMSOverlay.style.display = 'none';
+            exitApp();
+            changeCarrierToTime.style.color = 'white';
+            fiveG.style.color = 'white';
+            hideStatusBar.src = "./images/Mobile/statusBars/Status_Bars.png";
+            mobileBattery.src = "./images/Mobile/statusBars/Battery_Icon.png";
         });
     });
 });
