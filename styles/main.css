@@ -683,7 +683,6 @@ body {
 #enter-app-SMS {
     display: none;
     position: fixed;
-    text-align: center;
     position: absolute;
     background-color: whitesmoke;
     width: 260px;
@@ -691,6 +690,30 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+#SMS-wrapper-top {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    top: 40px;
+}
+#SMS-wrapper-top span {
+    color: #6caeff;
+    text-shadow: 0 0 1px #6caeff, 0 0 1px #6caeff;
+}
+#start-convo-btn {
+    width: 20px;
+}
+#SMS-messages-text-header {
+    position: relative;
+    top: 40px;
+    text-align: left;
+    padding-left: 15px;
+    color: black;
+    font-size: 1.6rem;
+    text-shadow: 0 0 1px black, 0 0 1px black;
 }
 /* #mobile-weather-high {
 
