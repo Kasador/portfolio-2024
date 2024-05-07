@@ -1,0 +1,16 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Depending on how you access my portfolio website (https://hunterstevenshaw.info/), my website will pull up and load a different website. One for desktop, and the other for mobile; phone.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "twilio": "^5.0.4"
+  }
+}

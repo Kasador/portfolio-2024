@@ -204,7 +204,20 @@ let appTikTok = document.getElementById('mobile-apps-tiktok');
 let appBlog = document.getElementById('mobile-apps-blog');
 let appInstagram = document.getElementById('mobile-apps-instagram');
 let mobileHeader = document.getElementById('mobile-header');
+let appSMS = document.getElementById('app-imessage');
+let appSMSOverlay = document.getElementById('enter-app-SMS');
 
+const enterNewApp = () => {
+    showMobileScreen.style.display = 'none';
+    showMobileFooter.style.display = 'none';
+    hideFooterApps.style.display = 'none';
+};
+const hideTopBar = () => {
+    hideStatusBar.style.display = 'none';
+    changeCarrierToTime.style.display = 'none';
+    fiveG.style.display = 'none';
+    mobileBattery.style.display = 'none';
+};
 const exitFolderOverLay = (e) => {
     getMobileBG.style.backgroundImage = 
             "url(/images/Mobile/wallpapers/iPhone_Wallper_BG_v3.png)";
@@ -223,13 +236,12 @@ const showFolderOverLay = (e) => {
     getMobileBG.style.backgroundImage = 
         "url(/images/Mobile/wallpapers/iPhone_Wallper_Blurred_BG_WithApps_v3.png)";
     appProjectOverlay.style.display = 'block';
-    showMobileScreen.style.display = 'none';
-    showMobileFooter.style.display = 'none';
-    hideFooterApps.style.display = 'none';
-    hideStatusBar.style.display = 'none';
-    changeCarrierToTime.style.display = 'none';
-    fiveG.style.display = 'none';
-    mobileBattery.style.display = 'none';
+    enterNewApp();
+    hideTopBar();
+};
+const showSMSApp = (e) => {
+    console.log('tapped SMS iMessager...');
+    enterNewApp();
 };
 
 // MOBILE || fix for iphone onclick event to tap
@@ -347,6 +359,16 @@ window.addEventListener('DOMContentLoaded', (e) => {
         appProjectOverlay.addEventListener('click', (e) => {
             exitFolderOverLay();
         });
+    });
+    // iMessager SMS app iPhone 
+    appSMS.addEventListener('click', (e) => {
+        showSMSApp();
+        appSMSOverlay.style.display = 'block';
+        // change color to black
+        hideStatusBar.src = "./images/Mobile/statusBars/Status_Bars_Black.png";
+        mobileBattery.src = "./images/Mobile/statusBars/Battery_Icon_Black.png";
+        changeCarrierToTime.style.color = 'black';
+        fiveG.style.color = 'black';
     });
 });
 

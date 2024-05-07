@@ -306,11 +306,13 @@ body {
     font-weight: bold;
     position: relative;
     padding: 8px;
+    z-index: 1000;
 }
 #mobile-service-battery {
     color: white;
     position: relative;
     left: 5px;
+    z-index: 1000;
 }
 #status-bar {
     width: 20px;
@@ -662,6 +664,19 @@ body {
     font-size: 0.7rem;
     position: relative;
     top: -7px;
+}
+/* SMS MESSAGER IPHONE APP */
+#enter-app-SMS {
+    display: none;
+    position: fixed;
+    text-align: center;
+    position: absolute;
+    background-color: whitesmoke;
+    width: 260px;
+    height: 547px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 /* #mobile-weather-high {
 
