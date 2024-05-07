@@ -215,6 +215,7 @@ let appInstagram = document.getElementById('mobile-apps-instagram');
 let mobileHeader = document.getElementById('mobile-header');
 let appSMS = document.getElementById('app-imessage');
 let appSMSOverlay = document.getElementById('enter-app-SMS');
+let exitSMS = document.getElementById('SMS-exit');
 
 const enterNewApp = () => {
     showMobileScreen.style.display = 'none';
@@ -378,6 +379,11 @@ window.addEventListener('DOMContentLoaded', (e) => {
         mobileBattery.src = "./images/Mobile/statusBars/Battery_Icon_Black.png";
         changeCarrierToTime.style.color = 'black';
         fiveG.style.color = 'black';
+
+        // exit SMS
+        exitSMS.addEventListener('click', (e) => {
+            appSMSOverlay.style.display = 'none';
+        });
     });
 });
 

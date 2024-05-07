@@ -708,12 +708,46 @@ body {
 }
 #SMS-messages-text-header {
     position: relative;
-    top: 40px;
+    top: 35px;
     text-align: left;
     padding-left: 15px;
     color: black;
     font-size: 1.6rem;
     text-shadow: 0 0 1px black, 0 0 1px black;
+}
+#SMS-search-bar {
+    padding: 5px;
+    padding-left: 25px;
+    border-radius: 8px;
+    background-color: #ededed;
+    border: none;
+    position: relative;
+    top: 35px;
+    width: 215px;
+    margin: 10px;
+}
+#search-bar-icon {
+    position: relative;
+    right: 98px;
+    width: 15px;
+    top: 3px;
+}
+#search-bar-mic-icon {
+    width: 13px;
+    position: relative;
+    right: -102px;
+    top: 3px;
+}
+#SMS-exit {
+    border-width: 1px 1px 0;
+    background-color: black;
+    border: 2px black solid;
+    width: 40%;
+    opacity: 1;
+    right: 75px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
 }
 /* #mobile-weather-high {
 
