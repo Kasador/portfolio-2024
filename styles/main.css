@@ -4,25 +4,38 @@ body {
     touch-action: manipulation;
 }
 /* promo banner */
-/* #promo-banner {
+#promo-banner {
     position: fixed;
     z-index: 999;
     text-align: center;
     background-color: #777;
-    opacity: 0.7;
+    opacity: 0.85;
     color: whitesmoke;
     padding: 15px;
     width: 100%;
 }
 #promo-banner span {
-    color: red;
+    color: orangered;
     font-size: 1.2rem;
-    text-shadow: 0 0 1px red, 0 0 3px whitesmoke;
+    text-shadow: 0 0 1px orangered, 0 0 3px yellow;
 }
 #promo-banner a {
     color: yellow;
     font-size: 1.2rem;
-} */
+}
+#promo-banner-wrapper {
+    padding: 20px;
+}
+#promo-banner-close-btn {
+    position: absolute;
+    left: 90%;
+    top: 10px;
+    color: red;
+    background-color: white;
+    border-radius: 100%;
+    padding: 5px;
+    text-shadow: 0 0 1px orangered, 0 0 3px yellow;
+}
 /* desktop animated bg */
 #video-desktop {
     position: fixed;

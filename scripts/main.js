@@ -189,6 +189,15 @@ document.getElementById('unlock-time').innerHTML = formattedTime;
 // function for random status bar || random time between (1-30s) || pick random img/change
 // case statement for random images
 
+// promo banner
+let promoClose = document.getElementById('promo-banner-close-btn');
+let promoBanner = document.getElementById('promo-banner');
+
+promoClose.addEventListener('click', (e) => {
+    promoBanner.style.display = 'none';
+    promoClose.style.display = 'none';
+});
+
 // function handling project folder
 let appProjectIcon = document.getElementById('mobile-apps-folder');
 let appProjectOverlay = document.getElementById('mobile-folder-overlay-wrapper');
