@@ -739,6 +739,10 @@ body {
     top: 3px;
 }
 #SMS-exit {
+    background-color: black;
+    border: 2px black solid;
+}
+.exit-app {
     border-width: 1px 1px 0;
     background-color: black;
     border: 2px black solid;
@@ -748,6 +752,52 @@ body {
     border-radius: 10px;
     position: absolute;
     bottom: 0px;
+}
+#spotify-exit {
+    background-color: white;
+    border: 2px white solid;
+}
+/* spotify IPHONE APP */
+#enter-app-spotify {
+    display: none;
+    position: fixed;
+    position: absolute;
+    background-color: #191919;
+    width: 260px;
+    height: 547px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#spotify-app-header {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+}
+#spotify-app-header-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.spotify-app-header-list-item {
+    color: whitesmoke;
+    padding: 7px;
+    margin: 2px;
+    font-size: 0.65rem;
+    background-color: #282828;
+    border-radius: 20px;
+}
+.music-item-active {
+    color: #282828 !important; 
+    background-color: #13b64b !important;
+}
+#spotify-app-header-list-image {
+    position: absolute;
+    left: -40px;
+    top: -5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
 }
 /* #mobile-weather-high {
 
