@@ -219,6 +219,9 @@ let exitSMS = document.getElementById('SMS-exit');
 let appSpotifyOverlay = document.getElementById('enter-app-spotify');
 let appSpotify = document.getElementById('app-spotify');
 let exitSpotify = document.getElementById('spotify-exit');
+let appCalculatorOverlay = document.getElementById('enter-app-calculator');
+let appCalculator = document.getElementById('mobile-apps-calculator');
+let exitCalculator = document.getElementById('calculator-exit');
 
 const enterApp = () => {
     showMobileScreen.style.display = 'none';
@@ -259,8 +262,11 @@ const showSMSApp = (e) => {
     console.log('Tapped SMS messager.');
     enterApp();
 };
-
 const showSpotifyApp = (e) => {
+    console.log('Tapped Spotify app.');
+    enterApp();
+};
+const showCalculatorApp = (e) => {
     console.log('Tapped Spotify app.');
     enterApp();
 };
@@ -414,6 +420,26 @@ window.addEventListener('DOMContentLoaded', (e) => {
         // exit Spotify
         exitSpotify.addEventListener('click', (e) => {
             appSpotifyOverlay.style.display = 'none';
+            exitApp();
+            // changeCarrierToTime.style.color = 'white';
+            // fiveG.style.color = 'white';
+            // hideStatusBar.src = "./images/Mobile/statusBars/Status_Bars.png";
+            // mobileBattery.src = "./images/Mobile/statusBars/Battery_Icon.png";
+        });
+    });
+    // Calculator app iPhone 
+    appCalculator.addEventListener('click', (e) => {
+        showCalculatorApp();
+        appCalculatorOverlay.style.display = 'block';
+        // change color to black
+        // hideStatusBar.src = "./images/Mobile/statusBars/Status_Bars_Black.png";
+        // mobileBattery.src = "./images/Mobile/statusBars/Battery_Icon_Black.png";
+        // changeCarrierToTime.style.color = 'black';
+        // fiveG.style.color = 'black';
+
+        // exit Calculator
+        exitCalculator.addEventListener('click', (e) => {
+            appCalculatorOverlay.style.display = 'none';
             exitApp();
             // changeCarrierToTime.style.color = 'white';
             // fiveG.style.color = 'white';
