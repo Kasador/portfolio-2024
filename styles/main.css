@@ -274,7 +274,7 @@ body {
 /* MOBILE STARTS NOW!!!!!! */
 #mobile {
     /* display: block; */
-    background-image: url(/images/Mobile/wallpapers/iPhone_Wallper_BG_v3.png);
+    background-image: url(/images/Mobile/wallpapers/iPhone_Wallper_BG_v3.jpg);
     background-color:rgba(0, 0, 0, 0.5);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -304,7 +304,7 @@ body {
     z-index: 20;
 }
 .mobile-change-bg {
-    background-image: url(/images/Mobile/wallpapers/iPhone_Wallper_Blurred_BG_v3.png) !important;
+    background-image: url(/images/Mobile/wallpapers/iPhone_Wallper_Blurred_BG_v3.jpg) !important;
     position: absolute;
     width: 260px;
     height: 545px;
@@ -509,7 +509,7 @@ body {
     padding-top: 2px;
 }
 #mobile-photos-box {
-    background-image: url(/images/Mobile/photos/Me.png);
+    background-image: url(/images/Mobile/photos/Me_small.jpg);
     background-position: center;
     background-size: cover;
     width: 80px;

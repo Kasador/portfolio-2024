@@ -243,14 +243,14 @@ const hideTopBar = () => {
 };
 const exitFolderOverLay = () => {
     getMobileBG.style.backgroundImage = 
-            "url(/images/Mobile/wallpapers/iPhone_Wallper_BG_v3.png)";
+            "url(/images/Mobile/wallpapers/iPhone_Wallper_BG_v3.jpg)";
     appProjectOverlay.style.display = 'none';
     exitApp();
 };
 const showFolderOverLay = () => {
     console.log('Tapped projects folder.');
     getMobileBG.style.backgroundImage = 
-        "url(/images/Mobile/wallpapers/iPhone_Wallper_Blurred_BG_WithApps_v3.png)";
+        "url(/images/Mobile/wallpapers/iPhone_Wallper_Blurred_BG_WithApps_v3.jpg)";
     appProjectOverlay.style.display = 'block';
     enterApp();
     hideTopBar();
