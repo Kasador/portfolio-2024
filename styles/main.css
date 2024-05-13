@@ -830,7 +830,58 @@ body {
     font-size: 0.7rem;
     text-align: left;
 }
-
+#spotify-new-release-main {
+    position: absolute;
+    top: 240px;
+    right: 10px;
+    width: 235px;
+}
+#spotify-new-release-text-wrapper {
+    position: relative;
+    right: 10px;
+    top: 5px;
+}
+#spotify-new-release-header {
+    color: white;
+}
+#spotify-new-release-text {
+    color: #999;
+    font-size: 0.7rem;
+}
+#spotify-new-release-image {
+    width: 50px;
+    border-radius: 100%;
+    position: absolute;
+    right: 180px;
+}
+#spotify-new-release-box {
+    display: flex;
+    align-items: center;
+    background-color: #383838;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+    top: 30px;
+}
+#spotify-new-release-box-text-wrapper {
+    text-align: left;
+    padding: 10px;
+    position: relative;
+    bottom: 10px;
+}
+#spotify-new-release-box-image {
+    width: 80px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#spotify-new-release-box-title {
+    color: white;
+    font-size: 0.9rem;
+}
+#spotify-new-release-box-text {
+    color: #999;
+    font-size: 0.7rem;
+}
 /* #mobile-weather-high {
 
 }
