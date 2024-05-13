@@ -860,6 +860,8 @@ body {
     background-color: #383838;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     position: relative;
     top: 30px;
 }
