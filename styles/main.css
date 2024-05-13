@@ -799,6 +799,38 @@ body {
     height: 35px;
     border-radius: 100%;
 }
+#spotify-box-music-main {
+    position: absolute;
+    top: 100px;
+    right: 5px;
+}
+.spotify-box-music-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.spotify-box-music {
+    display: flex;
+    align-items: center;
+    background-color: #383838;
+    border-radius: 5px;
+    margin: 5px;
+    width: 115px;
+}
+.spotify-box-music-images {
+    width: 30px;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.spotify-box-music-text {
+    color: whitesmoke;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.7rem;
+    text-align: left;
+}
+
 /* #mobile-weather-high {
 
 }
